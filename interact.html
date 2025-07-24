@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> InteractiveGame. </title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel = "stylesheets" href = "interact.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Quiz Game</title>
+  <link rel="stylesheet" href="interact.css">
 </head>
-<header>
-    <h1> Welcome to Interactive Quiz Game! </h1>
-</header>
-<body>  
-   <div class="Quiz1">
-    <p>1. Variables declared in the global scope are accessible throughout the entire script, including
-        within functions.</p>
-    <br> Global Scope <button class = "button1"> . </button> </br>
-    <br> Local Scope <button class = "button1"> . </button> </br>
-
-   </div>
+<body>
+  <header>
+    <h1>Welcome to Interactive Quiz Game!</h1>
+  </header>
+  <div class="quiz-container">
+    <div id="questionBox"></div>
+    <div id="choices"></div>
+    <button onclick="submitAnswer()">Submit</button>
+    <div id="feedback"></div>
+    <div id="scoreBox">Score: 0</div>
+    <div id="finalMessage"></div>
+  </div>
+  <script src="interact.js"></script>
 </body>
-
-
-
 </html>
